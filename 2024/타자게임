@@ -1,0 +1,108 @@
+##from random import *
+
+##a = ['월','화','수','목','금','토','일']
+
+##t = randint(0,6)
+
+##print(a[t])
+
+
+##from random import *
+##a = ['월','화','수','목','금']
+##print(choice([True, False]))
+##print(choices(a))
+
+##from random import *
+
+##a = [0,1,2,3,4,5]
+##r = choice(a)
+
+##if r == 0:
+    ## print("Lose")
+##else :
+     ##print('No, %d Spot!' % r)
+
+
+from random import *
+import turtle
+
+g = turtle.Turtle()
+g.write("씨큐브 코딩의 타자 게임!", True, font = ("Arial", 20, "bold"))
+
+house = turtle.Turtle()
+house.penup()
+house.goto(200,-200)
+house.fillcolor("blue")
+house.begin_fill()
+house.pendown()
+house.goto(300,-200)
+house.goto(300,-100)
+house.goto(200,-100)
+house.goto(200,-200)
+house.end_fill()
+
+house.fillcolor("red")
+house.penup()
+house.goto(200,-100)
+house.pendown()
+house.begin_fill()
+house.left(60)
+house.goto(250,0)
+house.right(60)
+house.goto(300,-100)
+house.end_fill()
+
+line = turtle.Turtle()
+line.penup()
+line.goto(-200,-200)
+line.pendown()
+line.write("0")
+line.goto(0,-200)
+line.write("50")
+line.goto(200,-200)
+line.write("100")
+
+t = turtle.Turtle(shape = "turtle")
+t.penup()
+t.goto(-220,-200)
+t.pendown()
+t.color("purple","pink")
+t.penup()
+
+fruit = ["apple","banana","strawberry","watermelon","mandarin","peach","grapes","Orange","pear","Kiwi"]
+
+score = 0
+n = randint(5,10)
+
+for i in range(n):
+     s = choice(fruit)
+     word = turtle.textinput("frutit",'%s(%d/%d)' %(s,i+1,n))
+     if s == word:
+          score += 1
+
+rate = score / n * 100
+
+g.penup()
+g.goto(0,-50)
+g.pendown()
+g.write("%d/%d번 성공!" %(score,n) ,True, font = ("Arial",15,"bold"))
+g.penup()
+g.pendown()
+g.write("정확도 : %.1f%%" %rate ,True, font = ("Arial",15,"bold"))
+
+distance = t.distance(line)/100 * rate
+t.speed(1)
+t.forward(distance)
+if rate == 100:
+     t.write("집에 데려다 줘서 고마워♬",False, "center",font = ("Arial",15,"normal"))
+     t.left(60)
+     t.right(60)
+     t.left(60)
+     t.right(60)
+elif rate >= 80:
+     t.write("집이 코앞이다! 한 번만 더 시도 해줘",False,"center",font = ("Arial",15,"normal"))
+else :
+     t.color('black')
+     t.right(360)
+     t.write("거북이 사망",False,"center",font = ("Arial",15,"normal"))
+turtle.done()
