@@ -1,0 +1,74 @@
+##i = 1
+##while i <= 10 :
+          ##print(i, end = ' ')
+          ##i += 1
+          
+##sum = 0
+##i = 1
+##while i <= 100 :
+     ##sum += i
+     ##i += 1
+##print(sum)
+
+##i = 0
+##while i < 10 :
+    ##i += 1
+     ##if i % 2 == 0 :
+         ## continue
+     ##print(i, end = ' ')
+
+##while True :
+     ##ans = input("Shall we close? (y/n)")
+     ##if ans == 'y' :
+          ##print("The end")
+          ##break
+
+##i = 1
+##while i <= 100 :
+     ##print(i, end = ' ')
+     ##i = i+1
+
+##sum = 0
+##n = int(input("정수 입력 :"))
+##i = 1
+##while i <= n:
+     ##sum +=i
+     ##i += 1
+##print(sum)
+
+##i = 0
+##while i<5 :
+     ##n = int(input("정수 입력 : "))
+     ##if n % 5 == 0 :
+          ##continue
+     ##print(n)
+     ##i += 1
+
+##n = 1
+##while n <= 10:
+     ##if n % 3 ==0 :
+          ##print('X', end = ' ')
+     ##else :
+          ##print(n, end = ' ')
+     ##n+=1
+
+##n = int(input("몇 단?"))
+##i = 1
+##while i < 10 :
+     ##print(" %d * %d = %d "%(n,i,n*i))
+     ##i+=1
+
+
+from random import*
+
+com = randint(1,100)
+
+while True :
+     user = int(input())
+     if com > user:
+          print("UP")
+     elif com < user:
+          print("Down")
+     elif com == user:
+          print("Correct!")
+          break
