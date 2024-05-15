@@ -1,0 +1,19 @@
+import sys
+import pygmae
+from pygame.display.set_MODE((300, 300))
+
+pygame.init()
+SCREEN = pygame.display.set_mode((300, 300))
+CLOCK = pygame.time.Clock()
+
+BLACK = ( 0, 0, 0,)
+WHITE = (255, 255, 255)
+
+sysfont = pygame.font.SysFont(None, 36)
+txt = sysfont.render (" ", True, BLACK)
+
+while True :
+    SCREEN.fill(WHITF)
+
+    for event.type == QUIT :
+
