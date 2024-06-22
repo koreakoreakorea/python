@@ -1,0 +1,73 @@
+##from tkinter import *
+
+##win = Tk()
+##label1 = Label(win, text = "orange", width = 20, height = 3, relief = "solid")
+##label2 = Label(win, text = " banana", font = ("Elephant", 20), bg = "yellow")
+##label3 = Label(win, text = "apple", fg = "red")
+##label1.pack()
+##label2.pack()
+##label3.pack()
+##win.mainloop()
+
+
+##from tkinter import *
+
+
+##win = Tk()
+##img = PhotoImage(file = 'pizza.png')
+##ibi = Label(win, image = img)
+##ib = Label(win, text = "pizza",fg = "red",bg = "yellow")
+##ibi.pack()
+##ib.pack()
+##win.mainloop
+
+
+
+##from tkinter import *
+##win = Tk()
+##def click() :
+     ##if ibi['text'] == "hello":
+          ##ibi['text'] = "pyton"
+          ##ibi['bg'] = "green"
+     ##else:
+          ##ibi['text'] = "hello"
+          ##ibi['bg'] = "orange"
+
+
+##ibi = Label(win, text = "hello",fg="white",bg="orange")
+##btn = Button(win, text = "button",command=click)
+##ibi.pack()
+##btn.pack()
+##win.mainloop()
+
+
+
+##from tkinter import *
+
+##win = Tk()
+
+##def message(event) :
+     ##ibi['text'] = entry.get()
+
+##entry = Entry(win)
+##entry.bind("<Return>", message)
+##entry.pack()
+##ibi = Label(win, text = " ")
+##ibi.pack()
+##win.mainloop()
+
+
+from tkinter import *
+
+win = Tk()
+win.title("grid")
+
+
+label1 = Label(win,width = 10, height = 5, bg = "red")
+label1 = Label(win,width = 10, height = 5, bg = "red")
+
+
+
+
+label1.grid(row = 0, column = 0 )
+label2.grid(row = 0, column = 2 )
