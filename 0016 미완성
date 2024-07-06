@@ -1,0 +1,77 @@
+##f = open("example.txt", "r")
+##while True :
+     ##print(f.tell(), end = '')
+     ##line = f.readline()
+     ##print(line.strip())
+     ##if not line : break
+##f.seek(26)
+##print("after setting a pointer : %d(%s)" % (f.tell(), f.read()[0]))
+##f.close()
+
+
+##f = open("example.txt", "w")
+##name = input("Name : ")
+##age = input("Age : ")
+##school = input("School : ")
+##f.write("Name : %s\n" % name)
+##f.write("Age : %s\n" % age)
+##f.write("School : %s\n" % school)
+##f.close()
+
+
+##f = open("example.txt", "r")
+##while True :
+     ##line = f.readline()
+     ##if not line : break
+     ##print(line, end = '')
+##f.close()
+
+
+##f = open("alphabet.txt","w")
+##f.write("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+##f.close()
+
+
+##f = open("alphabet.txt","r")
+##index = int(input())
+##f.seek(index)
+##print(f.readline())
+##f.close()
+
+
+
+##f = open("anna.txt","r")
+##data = f.read()
+##data = data.split()
+##for word in data:
+     ##if 'b' in word:
+         ##print(word)
+##f.close()
+
+
+
+def read_file(file_name) :
+     f = open(file_name, "r")
+     data = f.read()
+     print(data)
+
+
+
+
+
+
+##def write_file(file_name, mode) :
+
+
+
+
+
+
+
+file_name = input("File name : ")
+mode = input("File mode(r/w/a) : ")
+
+if mode == "r" :
+     read_file(file_name)
+else :
+     write_file(file_name, mode)
