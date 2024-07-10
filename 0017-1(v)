@@ -1,0 +1,13 @@
+feom PTL import Image
+
+area = (230, 155 , 1100, 770)
+size = (640 , 200)
+
+lion_ing = Image.open("Lion.jpg")
+fruit_ing = Image.open("fruit.png")
+
+print(lion_img.size, lion_img.format, lion_img.mod)
+print(fruit_img.size, fruit_img.format, fruit_img.mode)
+
+print(lion_img.size, lion_img.format, lion_img.mode)
+print(fruit_img.size, fruit_img.format, fruit_img.mode)
