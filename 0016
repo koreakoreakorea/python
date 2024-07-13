@@ -52,20 +52,20 @@
 
 def read_file(file_name) :
      f = open(file_name, "r")
-     data = f.read()
-     print(data)
+     data = f.readlines()
+     for line in lines:
+          print(line.strip())
+     f.close()
 
-
-
-
-
-
-##def write_file(file_name, mode) :
-
-
-
-
-
+def write_file(file_name, mode) :
+     f = open(file_name,mode)
+     print("Input(Enter 'q' to exit input) :")
+     while True:
+          data = input()
+          if data == "q":
+               break
+          f.write(data + "\n")
+     f.close()
 
 
 file_name = input("File name : ")
